@@ -1,0 +1,145 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* BODY */
+  body {
+    font-family: "Georgia", serif;
+    background: #f5f1e8; /* Light parchment-like color for a historical vibe */
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* NAVIGATION */
+  nav {
+    background: #444;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+  }
+  nav ul li {
+    margin-right: 1rem;
+  }
+  nav a {
+    display: block;
+    padding: 1rem;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  nav a:hover {
+    background: #666;
+  }
+  nav a.active {
+    background: #997b5d; /* A warmer highlight color for the active page */
+  }
+  
+  /* HEADER */
+  header {
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  .subtitle {
+    color: #555;
+    font-style: italic;
+  }
+  
+  /* MAIN LAYOUT */
+  main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 4px;
+    margin-top: 1rem;
+  }
+  
+  /* SECTION STYLES */
+  .introduction,
+  .source-info,
+  .quotes-section,
+  .analysis-section,
+  .image-analysis {
+    margin-bottom: 2rem;
+  }
+  .introduction h2,
+  .source-info h2,
+  .quotes-section h2,
+  .analysis-section h2,
+  .image-analysis h2 {
+    margin-bottom: 1rem;
+    color: #444;
+  }
+  
+  /* QUOTES PAGE */
+  .quotes-section .quote-box {
+    margin-bottom: 1rem;
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 1rem;
+  }
+  .quote-toggle {
+    background: #997b5d;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s;
+  }
+  .quote-toggle:hover {
+    background: #715740;
+  }
+  .quote-content {
+    display: none;
+    margin-top: 0.5rem;
+  }
+  blockquote {
+    font-style: italic;
+    margin-bottom: 0.5rem;
+  }
+  .analysis-section p {
+    margin-bottom: 1rem;
+  }
+  
+  /* IMAGE PAGE */
+  .image-analysis figure {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .image-analysis img {
+    max-width: 100%;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+  }
+  .image-analysis figcaption {
+    font-style: italic;
+    color: #666;
+    margin-top: 0.5rem;
+  }
+  .image-analysis h3 {
+    margin-top: 1.5rem;
+    color: #444;
+  }
+  
+  /* FOOTER */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #444;
+    color: #fff;
+    margin-top: 1rem;
+  }
+  
