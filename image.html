@@ -1,73 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Visual Analysis</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8">
+  <title>Captured Taiping Flag – Online Exhibition</title>
+  <style>
+    /* === RESET & GLOBALS === */
+    * {box-sizing:border-box;margin:0;padding:0;}
+    body {font-family:'Segoe UI', Arial, sans-serif; background:#f7f7f7; color:#222; line-height:1.6;}
+    header {background:#8b0000; color:#fff; padding:1.75rem 2rem; text-align:center;}
+    header h1 {font-size:2.25rem; letter-spacing:0.04rem;}
+
+    /* === LAYOUT === */
+    .container {max-width:960px; margin:0 auto; padding:2rem 1rem;}
+    .flag {display:block; width:100%; height:auto; border:10px solid #8b0000; box-shadow:0 6px 14px rgba(0,0,0,0.25);}  
+    .caption {margin-top:1.2rem; font-style:italic; text-align:center;}
+    .caption a {color:#8b0000; text-decoration:none; border-bottom:1px dotted currentColor;}
+    .caption a:hover {border-bottom:2px solid currentColor;}
+
+    /* === ACCORDIONS === */
+    .section {margin-top:2.25rem; border:1px solid #ccc; border-radius:8px; background:#fff; overflow:hidden; transition:all 0.3s ease;}
+    .section h2 {margin:0; padding:1rem 1.4rem; background:#8b0000; color:#fff; font-size:1.2rem; cursor:pointer; user-select:none; position:relative;}
+    .section h2::after {content:"\25BC"; position:absolute; right:1rem; transition:transform 0.3s ease;}
+    .section.open h2::after {transform:rotate(180deg);}    
+    .content {display:none; padding:0 1.4rem;}
+    .section.open .content {display:block; padding:1.6rem 1.4rem;}
+
+    /* === TEXT === */
+    p {margin-bottom:1rem; text-align:justify;}
+    ol {margin-left:1.3rem;}
+    li {padding-left:0.4rem; margin-bottom:0.55rem;}
+    cite {font-style:normal;}
+
+    footer {margin-top:3.5rem; text-align:center; font-weight:bold; color:#555;}
+  </style>
 </head>
 <body>
-  <!-- Navigation Bar -->
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="quotes.html">Quotes & Analysis</a></li>
-      <li><a href="image.html" class="active">Visual Analysis</a></li>
-    </ul>
-  </nav>
-
   <header>
-    <h1>The Chinese Opium Smoker No. 12</h1>
-
+    <h1>Captured Taiping Flag, Ningbo 1862</h1>
   </header>
-  
-  <main>
-    <section class="image-analysis">
-      <figure>
-        <!-- Replace "opium-smoker.png" with your actual file name or path -->
-        <img src="opium-smoker.png" alt="The Chinese Opium Smoker No. 12" />
-        <figcaption>
-          (From <em>The Chinese Opium-Smoker</em>: Twelve Illustrations Showing the Ruin which 
-          Our Opium Trade with China is Bringing Upon that Country)
-        </figcaption>
-      </figure>
+  <div class="container">
+    <img src="https://collections.rmg.co.uk/media/575/837/l4477.jpg" alt="Taiping battle flag captured at Ningbo in 1862" class="flag">
+    <p class="caption">
+      Captured at Ningbo in 1862 by HMS Hardy, this white silk battle flag carries the bold crimson character <em>Chen</em> for General Chen Yucheng and eight vivid Buddhist emblems. Its survival shows how British intervention in the Taiping War turned sacred rebel symbols into imperial trophies now preserved at the <a href="https://www.rmg.co.uk/national-maritime-museum" target="_blank">National Maritime Museum in Greenwich, London</a>.
+    </p>
 
-      <h2>Analysis of the Image</h2>
-      <p>
-        The image titled <em>The Chinese Opium Smoker No. 12</em> comes from a series of 
-        illustrations showing the destructive effects of the opium trade in China. It depicts 
-        an opium smoker struggling to survive in the winter, eventually finding shelter in a 
-        cave where he dies. This visual representation directly contrasts with the British 
-        perspectives found in the <em>Records of the Royal Commission on Opium</em>. In the 
-        document, British officials repeatedly defend the opium trade by focusing on its 
-        economic importance to the Indian government. They describe opium as a necessary 
-        source of revenue and downplay its harmful effects by shifting responsibility to 
-        Chinese authorities.
-      </p>
-      <p>
-        The image challenges that narrative by focusing on the personal and social 
-        consequences of addiction. While the Commission frames the trade in terms of 
-        legality, treaties, and financial stability, the illustration forces viewers to 
-        confront the human suffering caused by those policies. Together, the document 
-        and the image reveal the gap between imperial justification and lived reality, 
-        helping us better understand the moral complexity of the opium trade.
-      </p>
+    <!-- ESSAY SECTION -->
+    <div class="section" id="essaySection">
+      <h2>Essay</h2>
+      <div class="content">
+        <p>
+          The flag above is a captured Taiping battle standard now held by the National Maritime Museum in Greenwich. British forces took it on ten May eighteen sixty two when a combined British French and Qing column recaptured the treaty port of Ningbo. That moment sits in the middle of the Taiping Rebellion timeline. The conflict began in eighteen fifty and reached its high tide with the capture of Nanjing in eighteen fifty three. By eighteen sixty the Heavenly Kingdom still controlled much of the Yangzi valley yet it faced new provincial armies led by Zeng Guofan and Li Hongzhang. The eighteen sixty two campaign for Ningbo is therefore a hinge point. It is the moment foreign navies openly moved from wary observers to active allies of the Qing. The loss of the port deprived the rebels of a potential base for maritime trade and foreign aid.
+        </p>
+        <p>
+          The flag itself is impressive. It is made of white silk that measures more than three metres on each side. A broad brown red border frames a single scarlet character Chen. This name refers to the Taiping field marshal Chen Yucheng who commanded operations near the lower Yangzi. Around the character the painter added eight Buddhist auspicious symbols including the wheel the shell and the lotus. The brushwork is quick and thick which hints that the artist decorated the cloth in camp rather than in a palace workshop. Technical analysis performed by museum conservators in twenty twelve found rice starch sizing on the silk fibres and mineral pigments such as cinnabar and malachite. Those findings show that the painter had access to traditional materials even during wartime.
+        </p>
+        <p>
+          The object challenges two common ideas. First it complicates the standard view that the Taiping rejected Chinese religious imagery. They smashed ancestral tablets in Nanjing yet carried Buddhist emblems into battle. Some scholars think the symbols comforted rank and file soldiers who grew up with temple art. Others argue that the mix shows doctrinal confusion inside the movement. The cloth lets us test the debate with physical evidence instead of relying only on texts.
+        </p>
+        <p>
+          Second the flag speaks to the international side of the civil war. Britain had announced neutrality in eighteen sixty. Shanghai merchants nevertheless pressed the Royal Navy to protect trade. Rear Admiral James Hope agreed. HMS Hardy steamed upriver with Royal Marines. The crew seized this flag and sent it to London. British newspapers printed woodcut sketches of their prize and presented it as proof that Western power could still shape China.
+        </p>
+        <p>
+          Custody is another theme. Modern visitors may see the textile as a record of heroism while Chinese historians may regard it as wartime loot. The museum notes that the flag is not currently on display because of its size and fragility. Digitising the object lets a wider audience inspect the paint layer the stitching and the bullet holes without moving the silk. It also invites discussion about where such artefacts belong and who decides that.
+        </p>
+        <p>
+          In an online gallery this flag opens many conversations. It connects military history with art history. It shows how events along the coast influenced global politics in the treaty port era. It invites viewers to think about how sacred symbols travel from the battlefield to a storeroom and finally to a digital screen. The cloth is silent yet eloquent. It reminds us that material culture often outlives the people and the ideas that created it.
+        </p>
+      </div>
+    </div>
 
-      <h3>Image Citation (Chicago Style)</h3>
-      <p>
-        School of Oriental and African Studies. <em>The Chinese Opium-Smoker No. 12</em>. 
-        From <em>The Chinese Opium-Smoker: Twelve Illustrations Showing the Ruin which Our 
-        Opium Trade with China is Bringing Upon that Country</em>. Accessed March 19, 2025.
-        <br/>
-        <a href="https://www-globalcommodities-amdigital-co-uk.ezproxy.bu.edu/FurtherResources/VisualResources/Image/SOAS_CWMLC_1_59/26">
-          Source Link
-        </a>
-      </p>
-    </section>
-  </main>
+    <!-- CITATIONS SECTION -->
+    <div class="section" id="citationSection">
+      <h2>Citations</h2>
+      <div class="content">
+        <ol>
+          <li>Royal Museums Greenwich. "Taiping Flag, Object AAA0552." National Maritime Museum. Accessed May 2 2025.</li>
+          <li>William T. Rowe. "How to Compare Civil Wars: The Taiping Rebellion." <cite>The Journal of Asian Studies</cite> 61, no. 4 (2002): 933–960.</li>
+          <li>Fairbank Center for Chinese Studies. "Placards of the Taiping Heavenly Kingdom." Harvard University, May 19 2021.</li>
+          <li>MIT Visualizing Cultures. "Taiping Rebellion: Civil War in the Qing." Massachusetts Institute of Technology. Accessed May 2 2025.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <footer>By Arshan Hejazi</footer>
 
-  <footer>
-    <p>image page!</p>
-  </footer>
+  <script>
+    // Accordion toggle on click
+    document.querySelectorAll('.section h2').forEach(function (header) {
+      header.addEventListener('click', function () {
+        header.parentElement.classList.toggle('open');
+      });
+    });
+  </script>
 </body>
 </html>
